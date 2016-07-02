@@ -1,0 +1,30 @@
+files:
+  include: '**/*.s+(a|c)ss'
+rules:
+  # Disallows
+  no-color-literals: 0
+  no-css-comments: 0
+  no-important: 0
+  no-mergeable-selectors: 0
+  no-misspelled-properties: 0
+  no-qualifying-elements: 0
+  no-vendor-prefixes: 0
+
+  # Nesting
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+
+  # Name Formats
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
+
+  # Style Guide
+  nesting-depth: 0
+
+  #
+  indentation:
+    - 2
+    - size: 2
+
+  placeholder-in-extend: 0
