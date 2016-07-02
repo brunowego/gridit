@@ -1,0 +1,9 @@
+{
+  "name": "gridit",
+  "description": "Lightweight css grid.",
+  "license": "MIT",
+  "homepage": "https://github.com/brunowego/gridit",
+  "ignore": [
+    "**/.*"
+  ]
+}
