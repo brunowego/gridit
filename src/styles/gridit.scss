@@ -2,8 +2,60 @@
  * Grid It
  */
 
-.gr {
+.row {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  // Align
+  &.-top { align-items: flex-start; }
+  &.-middle { align-items: center; }
+  &.-bottom { align-items: flex-end; }
+  &.-stretch { align-items: stretch; }
+  &.-baseline { align-items: baseline; }
+
+  // Content
+  &.-left { justify-content: flex-start; }
+  &.-center { justify-content: center; }
+  &.-right { justify-content: flex-end; }
+  &.-between { justify-content: space-between; }
+  &.-around { justify-content: space-around; }
+
+  // Direction
+  &.-reversing { flex-direction: row-reverse; }
 }
 
-// .gc {}
+.col {
+  flex-shrink: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &.-auto {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+
+  }
+
+  &.-first {
+    order: -1;
+  }
+
+  &.-last {
+    order: 1;
+  }
+
+  &.\-1 { width: calc(100% * 1 / 12); }
+  &.\-2 { width: calc(100% * 2 / 12); }
+  &.\-3 { width: calc(100% * 3 / 12); }
+  &.\-4 { width: calc(100% * 4 / 12); }
+  &.\-5 { width: calc(100% * 5 / 12); }
+  &.\-6 { width: calc(100% * 6 / 12); }
+  &.\-7 { width: calc(100% * 7 / 12); }
+  &.\-8 { width: calc(100% * 8 / 12); }
+  &.\-9 { width: calc(100% * 9 / 12); }
+  &.\-10 { width: calc(100% * 10 / 12); }
+  &.\-11 { width: calc(100% * 11 / 12); }
+  &.\-12 { width: 100%; }
+}
