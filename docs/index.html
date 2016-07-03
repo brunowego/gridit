@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Grid It!</title>
+    <link rel="stylesheet" href="/styles/gridit.css">
+    <style>
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      .box {
+        background-color: rgba(0, 0, 0, .15);
+        margin-bottom: 2rem;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .box .box {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid It!</h1>
+    <h2>Example</h2>
+    <div class="row">
+      <div class="col -1">
+        <div class="box"></div>
+      </div>
+      <div class="col -1">
+        <div class="box"></div>
+      </div>
+      <div class="col -1">
+        <div class="box"></div>
+      </div>
+      <div class="col -1">
+        <div class="box"></div>
+      </div>
+      <div class="col -2">
+        <div class="box"></div>
+      </div>
+      <div class="col -2">
+        <div class="box"></div>
+      </div>
+      <div class="col -4">
+        <div class="box"></div>
+      </div>
+      <div class="col -4">
+        <div class="box"></div>
+      </div>
+      <div class="col -4">
+        <div class="box"></div>
+      </div>
+      <div class="col -4">
+        <div class="box"></div>
+      </div>
+      <div class="col -3">
+        <div class="box"></div>
+      </div>
+      <div class="col -3">
+        <div class="box"></div>
+      </div>
+      <div class="col -3">
+        <div class="box"></div>
+      </div>
+      <div class="col -3">
+        <div class="box"></div>
+      </div>
+    </div>
+    <h2>Fluid</h2>
+    <div class="row">
+      <div class="col -12">
+        <div class="box"></div>
+      </div>
+      <div class="col -1">
+        <div class="box"></div>
+      </div>
+      <div class="col -11">
+        <div class="box"></div>
+      </div>
+      <div class="col -2">
+        <div class="box"></div>
+      </div>
+      <div class="col -10">
+        <div class="box"></div>
+      </div>
+      <div class="col -3">
+        <div class="box"></div>
+      </div>
+      <div class="col -9">
+        <div class="box"></div>
+      </div>
+      <div class="col -4">
+        <div class="box"></div>
+      </div>
+      <div class="col -8">
+        <div class="box"></div>
+      </div>
+      <div class="col -5">
+        <div class="box"></div>
+      </div>
+      <div class="col -7">
+        <div class="box"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <h2>Auto Width</h2>
+    <div class="row">
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+      <div class="col -auto">
+        <div class="box"></div>
+      </div>
+    </div>
+    <h2>Nested Grids</h2>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row">
+            <div class="col -8">
+              <div class="box">
+                <div class="row">
+                  <div class="col -4">
+                    <div class="box"></div>
+                  </div>
+                  <div class="col -8">
+                    <div class="box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col -4">
+              <div class="box">
+                <div class="row">
+                  <div class="col -12">
+                    <div class="box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Alignment</h2>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row -left">
+            <div class="col -6">
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row -center">
+            <div class="col -6">
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row -right">
+            <div class="col -6">
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row -top">
+      <div class="col -6">
+        <div class="box" style="height: 8rem;"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="row -middle">
+      <div class="col -6">
+        <div class="box" style="height: 8rem;"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="row -bottom">
+      <div class="col -6">
+        <div class="box" style="height: 8rem;"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="row -stretch">
+      <div class="col -6">
+        <div class="box" style="height: 8rem;"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="row -baseline">
+      <div class="col -6">
+        <div class="box" style="height: 8rem;"></div>
+      </div>
+      <div class="col -6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <h2>Distribution</h2>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row -around">
+            <div class="col -2">
+              <div class="box"></div>
+            </div>
+            <div class="col -2">
+              <div class="box"></div>
+            </div>
+            <div class="col -2">
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row -between">
+            <div class="col -2">
+              <div class="box"></div>
+            </div>
+            <div class="col -2">
+              <div class="box"></div>
+            </div>
+            <div class="col -2">
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Reordering</h2>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row">
+            <div class="col -2">
+              <div class="box">1</div>
+            </div>
+            <div class="col -2">
+              <div class="box">2</div>
+            </div>
+            <div class="col -2">
+              <div class="box">3</div>
+            </div>
+            <div class="col -2">
+              <div class="box">4</div>
+            </div>
+            <div class="col -2">
+              <div class="box">5</div>
+            </div>
+            <div class="col -2 -first">
+              <div class="box">
+                <strong>6</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row">
+            <div class="col -2 -last">
+              <div class="box">
+                <strong>1</strong>
+              </div>
+            </div>
+            <div class="col -2">
+              <div class="box">2</div>
+            </div>
+            <div class="col -2">
+              <div class="box">3</div>
+            </div>
+            <div class="col -2">
+              <div class="box">4</div>
+            </div>
+            <div class="col -2">
+              <div class="box">5</div>
+            </div>
+            <div class="col -2">
+              <div class="box">6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Reversing</h2>
+    <div class="row">
+      <div class="col -12">
+        <div class="box">
+          <div class="row -reversing">
+            <div class="col -2">
+              <div class="box">1</div>
+            </div>
+            <div class="col -2">
+              <div class="box">2</div>
+            </div>
+            <div class="col -2">
+              <div class="box">3</div>
+            </div>
+            <div class="col -2">
+              <div class="box">4</div>
+            </div>
+            <div class="col -2">
+              <div class="box">5</div>
+            </div>
+            <div class="col -2">
+              <div class="box">6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

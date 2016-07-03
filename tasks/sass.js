@@ -1,9 +1,9 @@
 export default {
-  dist: {
+  server: {
     expand: true,
     cwd: './src/styles',
     src: '*.scss',
-    dest: './dist/styles',
+    dest: './tmp/styles',
     ext: '.css'
   }
 };
