@@ -1,6 +1,10 @@
-# Grid It
+# Grid It!
 
 Lightweight css grid.
+
+## Requirements
+
+Ensure the existence of instruction `box-sizing: border-box;` in your project.
 
 ```css
 :root {
