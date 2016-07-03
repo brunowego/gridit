@@ -2,6 +2,16 @@
  * Grid It
  */
 
+.wrap {
+  margin: 0 auto;
+  max-width: 77rem;
+
+  &-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
