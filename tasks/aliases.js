@@ -12,5 +12,9 @@ export default {
   serve: [
     'server'
   ],
+  deploy: [
+    'dist',
+    'buildcontrol:pages'
+  ],
   default: ['server']
 };

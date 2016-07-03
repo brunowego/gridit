@@ -10,7 +10,7 @@ export default {
     expand: true,
     cwd: './src/styles',
     src: '*.scss',
-    dest: './tmp/styles',
+    dest: './docs/styles',
     ext: '.css'
   }
 };

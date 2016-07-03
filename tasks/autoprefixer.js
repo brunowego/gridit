@@ -13,9 +13,9 @@ export default {
     },
     files: [{
       expand: true,
-      cwd: './tmp/styles',
+      cwd: './docs/styles',
       src: '*.css',
-      dest: './tmp/styles'
+      dest: './docs/styles'
     }]
   }
 };
